@@ -59,7 +59,7 @@ void solve()
         {
             ll x;
             cin>>x;
-            if(!a.empty())cout<<a[x];
+            if(a.size()>=x+1)cout<<a[x];
             else cout<<"0";
             nl;
         }
