@@ -53,13 +53,13 @@ void solve()
         }
         else if(s=="remove")
         {
-            a.pop_back();
+            if(!a.empty())a.pop_back();
         }
         else if(s=="print")
         {
             ll x;
             cin>>x;
-            if(a.size())cout<<a[x];
+            if(!a.empty())cout<<a[x];
             else cout<<"0";
             nl;
         }
