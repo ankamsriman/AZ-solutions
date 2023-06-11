@@ -34,11 +34,6 @@ const ll mod = 1e9 + 7;
 const ll N = 100000;
 
 
-bool cmp(pair<string,ll>&x,pair<string,ll>&y)
-{
-    return x.s<y.s;
-}
- 
 void solve()
 {
     ll n,q;
