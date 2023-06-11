@@ -1,4 +1,3 @@
-
 //ANKAM SRIMAN
 #include <bits/stdc++.h>
 using namespace std;
@@ -57,6 +56,7 @@ void solve()
         else
         {
             if(!s.empty())cout<<s.top()<<"\n";
+            else cout<<"0\n";
         }
     }
 
