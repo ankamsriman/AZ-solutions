@@ -2,19 +2,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define IOS                      \
-    ios::sync_with_stdio(false); \
-    cin.tie(NULL);               \
+#define IOS                      
+    ios::sync_with_stdio(false); 
+    cin.tie(NULL);               
     cout.tie(NULL);
 
 #define fi(i, a, b) for (long long int i = a; i < b; i++)
 #define fd(i, a, b) for (long long int i = a; i >= b; i--)
 #define vl(a, n) vector<ll> a(n)
-#define scarr(a)                                 \
-    for (long long int i = 0; i < a.size(); i++) \
+#define scarr(a)                                 
+    for (long long int i = 0; i < a.size(); i++) 
     cin >> a[i]
-#define parr(a)                                  \
-    for (long long int i = 0; i < a.size(); i++) \
+#define parr(a)                                  
+    for (long long int i = 0; i < a.size(); i++) 
     cout << a[i] << " "
 #define ll long long
 #define ull unsigned long long int
@@ -63,6 +63,8 @@ void solve()
                 cout<<dq.front();
                 nl;    
             }
+            else cout<<"0\n";
+
             
         }
         else if(s=="printback")
@@ -72,6 +74,8 @@ void solve()
                 cout<<dq.back();
                 nl;    
             }
+            else cout<<"0\n";
+
         }
         else if(s=="erasefront")
         {
