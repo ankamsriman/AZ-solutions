@@ -51,6 +51,7 @@ void solve()
         else
         {
             if(!pq.empty())cout<<pq.top()<<"\n";
+            else cout<<"0\n";
         }
     }
 }   
