@@ -57,7 +57,7 @@ struct topk
         {
             auto z=ms1.find(x);
             s-=*z;
-            ms1.erase(x);
+            ms1.erase(ms1.find(x));
 
             if(!ms2.empty())
             {
@@ -72,7 +72,7 @@ struct topk
         }
         else if(ms2.find(x)!=ms2.end())
         {
-            ms2.erase(x);
+            ms2.erase(ms2.find(x));
         }
     }
     void sum()
