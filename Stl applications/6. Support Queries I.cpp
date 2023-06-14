@@ -45,38 +45,45 @@ struct abc
     }
     void remove(ll x)
     {
-        if(ms.count(x))ms.erase(ms.find(x));
-        s-=x;
+        if(ms.count(x))
+        {
+            ms.erase(ms.find(x));
+            s-=x;
+        }
+        
     }
-    ll max()
+    void max()
     {
         if(!ms.empty())
         {
             auto x=ms.end();
             x--;
-            return *x;    
+            cout<<*x;    
         }
         else
         {
-            return -1;
+            cout<<-1;
         }
+        nl;
         
     }
-    ll min()
+    void min()
     {
         if(!ms.empty())
         {
             auto x=ms.begin();
-            return *x;    
+            cout<<*x;    
         }
         else
         {
-            return -1;
+            cout<<-1;
         }
+        nl;
     }
-    ll sum()
+    void sum()
     {
-        return s;
+        cout<<s;
+        nl;
     }
 
 };
@@ -106,23 +113,20 @@ void solve()
         {
             char x;
             cin>>x;
-            cout<<ab.min();
-            nl;
+            ab.min();
 
         }
         else if(z==4)
         {
             char x;
             cin>>x;
-            cout<<ab.max();
-            nl;
+            ab.max();
         }
         else
         {
             char x;
             cin>>x;
-            cout<<ab.sum();
-            nl;
+            ab.sum();
         }
         
 
