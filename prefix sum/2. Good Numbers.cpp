@@ -40,16 +40,16 @@ void solve()
         a[l]++;
         a[r+1]--;
     }
-    fi(i,1,n+1)
+    fi(i,1,a.size())
     {
         a[i]+=a[i-1];
     }
-    fi(i,1,n+1)
+    fi(i,1,a.size())
     {
         if(a[i]>=k)a[i]=1;
         else a[i]=0;
     }
-    fi(i,1,n+1)
+    fi(i,1,a.size())
     {
         a[i]+=a[i-1];
     }
