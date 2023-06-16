@@ -32,7 +32,7 @@ void solve()
 {
     ll n,k,q;
     cin>>n>>k>>q;
-    vt(a,n+2);
+    vt(a,1e6+2);
     fi(i,1,n+1)
     {
         ll l,r;
