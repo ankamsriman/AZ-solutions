@@ -71,7 +71,7 @@ void solve(){
     sort(m1.begin(),m1.end());
     sort(m2.begin(),m2.end());
 
-    lli ans=0;
+    ll ans=0;
 
     if (n1<n2){
         for(int i=0;i<m1.size();i++){
@@ -115,7 +115,6 @@ signed main()
     }
     return 0;
 }
-
 // Description
 
 // You have given an array of length N, and a number X. Find the number of subsets with the sum of elements less than equal to X.
