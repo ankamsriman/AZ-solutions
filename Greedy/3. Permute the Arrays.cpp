@@ -1,34 +1,92 @@
-#include<bits/stdc++.h>
+//Ankam Sriman
+#include <bits/stdc++.h>
 using namespace std;
-# define lli long long int
 
-void solve(){
-	int n;
-	cin >> n;
-	int arr[n];
-	int brr[n];
-	for(int i=0;i<n;i++)cin >> arr[i];
-	for(int i=0;i<n;i++)cin >> brr[i];
-	sort(arr,arr+n);
-	sort(brr,brr+n);
-	lli ans=0;
-	for(int i=0;i<n;i++){
-		ans+=abs(arr[i]-brr[i]);
-	}
+#define IOS ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
-	cout<< ans << endl;
+#define fi(i,a,b) for(long long int i = a; i<b; i++)
+#define fd(i,a,b) for(long long int i = a; i>=b; i--)
+#define scarr(a) for(long long int i=0;i<a.size();i++) cin>>a[i]
+#define parr(a) for(long long int i=0;i<a.size();i++) cout<<a[i]<<" "
+#define ll  long long int
+#define ull unsigned long long int
+
+
+#define spa " "
+#define nl cout<<"\n"
+#define pr(x) cout<<x<<"\n"
+#define prvt(a) for(long long int i=0;i<a.size();i++) cout<<a[i]<<" "
+#define star cout<<"*\n"
+
+
+//string s;
+//ll a[1000009];
+
+
+//vector<ll>a,b;
+//ll n, k;
+
+ll mod = 1000000007;
+ll is_prime[1000100];
+ll sp[1000100];
+ll N = 1000100;
+
+
+
+void solve()
+{
+    ll n;
+    cin >> n;
+    vector<ll>a(n), b(n);
+    fi(i, 0, n)
+    {
+
+        cin >> a[i] >> b[i];
+
+    }
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+
+    ll med = n / 2;
+    ll ans = 0;
+
+    fi(i, 0, n)
+    {
+        ans += abs(a[med] - a[i]);
+        ans += abs(b[med] - b[i]);
+    }
+    cout << ans;
+    nl;
+
+
+
+
 }
 
-int main(){
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	int t;
-	cin >>t;
-	while(t--){
-		solve();
-	}
 
+int main()
+{
+    //py;
+    //fun();
+
+
+
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+
+    //fac();
+
+
+    IOS;
+    ll t; cin >> t; while (t--)
+    {
+        solve();
+    }
+    return 0 ;
 }
+
 // Time-Limit: 1 sec Score: 100/100
 // Difficulty : 
 //  Memory: 256 MB Accepted Submissions: 100
