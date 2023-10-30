@@ -91,7 +91,10 @@ signed main()
     }
     return 0;
 }
-
+// Time-Limit: 1 sec Score: 100.00/100
+// Difficulty : 
+//  Memory: 256 MB Accepted Submissions: 100
+// Relevant For:
 // Description
 
 // You are given an array of n integers, and your task is to find four values (at distinct positions) whose sum is x.
