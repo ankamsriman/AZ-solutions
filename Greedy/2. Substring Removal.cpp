@@ -186,6 +186,10 @@ signed main()
     }
     return 0 ;
 }
+// Time-Limit: 1 sec Score: 100.00/100
+// Difficulty : 
+//  Memory: 256 MB Accepted Submissions: 100
+
 // Description
 
 // You are given a string s and two integers x and y. You can perform two types of operations any number of times.
