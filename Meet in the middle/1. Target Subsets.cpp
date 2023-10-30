@@ -115,6 +115,11 @@ signed main()
     }
     return 0;
 }
+
+// Time-Limit: 3 sec Score: 100.00/100
+// Difficulty : 
+//  Memory: 256 MB Accepted Submissions: 100
+// Relevant For:
 // Description
 
 // You have given an array of length N, and a number X. Find the number of subsets with the sum of elements less than equal to X.
