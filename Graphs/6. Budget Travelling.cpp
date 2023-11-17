@@ -116,6 +116,7 @@ signed main()
     }
     return 0;
 }
+/*
 Time-Limit: 2 sec Score: 100.00/100
 Difficulty : 
  Memory: 256 MB Accepted Submissions: 100
@@ -198,3 +199,4 @@ Fill petrol of 4 liters in city 1, and travel via path 1 → 2 → 3 → 4 → 5
 Explanation 2:
 
 Fill 1 liter of petrol in city 1 of cost 10, travel to city 6. Fill 5 liters of petrol at city 6 of cost 5 x 1 = 5. Travel to city 5. Total cost = 10 + 5 = 15. The path took 1 → 6 → 5.
+*/
